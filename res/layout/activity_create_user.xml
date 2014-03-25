@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/registro_titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/registro_progreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+	
+    	<!-- User Label -->
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_weight="0.21"
+		    android:text="@string/user"
+		    android:textColor="#372c24"
+		    android:textSize="@dimen/text" />
+    
+    	<EditText
+	        android:id="@+id/registro_usuario"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:ems="10"
+	        android:hint="@string/user" >
+         	<requestFocus />
+    	  </EditText>
+		  <!-- Password Label -->
+
+		  <TextView
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="20dp"
+		      android:layout_marginRight="20dp"
+		      android:layout_marginTop="5dp"
+		      android:layout_weight="0.21"
+		      android:text="@string/password"
+		      android:textColor="#372c24"
+		      android:textSize="@dimen/text" />
+
+		    <EditText
+		        android:id="@+id/registro_passwd_1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:ems="10"
+		        android:hint="@string/password"
+		        android:inputType="textPassword" />
+			
+		     <!-- Password Label -->
+
+		  	 <TextView
+		  	     android:layout_width="fill_parent"
+		  	     android:layout_height="wrap_content"
+		  	     android:layout_marginLeft="20dp"
+		  	     android:layout_marginRight="20dp"
+		  	     android:layout_marginTop="5dp"
+		  	     android:layout_weight="0.21"
+		  	     android:text="@string/password_confirm"
+		  	     android:textColor="#372c24"
+		  	     android:textSize="@dimen/text" />
+
+		<EditText
+		        android:id="@+id/registro_passwd_2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:ems="10"
+		        android:hint="@string/password"
+	        	android:inputType="textPassword" />
+
+	    <Button
+	        android:id="@+id/registro_btn_aceptar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/sign_up"
+	        android:textSize="@dimen/BotonGrande" />
+
+	    <TextView
+	        android:id="@+id/registro_pregunta"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="0.51"
+	        android:text="@string/pregunta_login" />
+	    
+	    <TextView
+	        android:id="@+id/ingreso_login"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_weight="1"
+	        android:text="@string/login_here"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/azul" />
+</LinearLayout>

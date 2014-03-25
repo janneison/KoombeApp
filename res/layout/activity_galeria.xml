@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    <TextView
+        android:id="@+id/titulo_galeria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:gravity="center"
+        android:text="@string/album_details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/imagen_progreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <ListView
+        android:id="@+id/lista_de_imagenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+    
+</LinearLayout>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    <TextView
+        android:id="@+id/ingreso_titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/ingreso_progreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+       <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+			<!-- User Label -->
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dip"
+		        android:layout_weight="1"
+		        android:text="@string/user"
+		        android:textColor="#372c24"
+		        android:textSize="@dimen/text" />
+
+            <EditText
+                android:id="@+id/ingreso_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/user" />
+
+            <!-- Password Label -->
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_weight="1"
+		        android:text="@string/password"
+		        android:textColor="#372c24"
+		        android:textSize="@dimen/text" />
+		    
+            <EditText
+                android:id="@+id/ingreso_passwd"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/ingreso_recordarme"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/remenber"
+                android:textColor="#372c24" />   
+
+            <Button
+                android:id="@+id/ingreso_aceptar"
+                android:layout_width="fill_parent"
+                android:layout_height="92dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:text="@string/login"
+                android:textSize="@dimen/BotonGrande" />
+           
+            <TextView
+                android:id="@+id/ingreso_pregunta"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:text="@string/pregunta"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+             <TextView
+                android:id="@+id/ingreso_registrar"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/create"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/azul" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

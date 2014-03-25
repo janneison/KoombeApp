@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/ingreso_progreso_detalle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+   	<RelativeLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="210dp"
+   	    android:padding="@dimen/paddingRL" >
+	
+	    <ImageView
+	        android:id="@+id/foto_detalle"
+	        android:layout_width="160dp"
+	        android:layout_height="180dp"
+	        android:layout_alignParentBottom="true"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/ic_launcher"
+	        android:cropToPadding="true"
+	        android:scaleType="center" />
+    
+    		<Button
+    		    android:id="@+id/detalle_album"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginBottom="14dp"
+    		    android:layout_marginLeft="10dp"
+    		    android:layout_toRightOf="@+id/foto_detalle"
+    		    android:text="@string/album_details"
+    		    android:textSize="@dimen/BotonGrande" />
+
+    		<Button
+    		    android:id="@+id/detalle_favorito"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/detalle_album"
+    		    android:layout_below="@+id/detalle_album"
+    		    android:layout_marginTop="14dp"
+    		    android:text="@string/title_activity_favorite"
+    		    android:textSize="@dimen/BotonGrande" />
+
+		</RelativeLayout>
+		
+   		<TextView
+                android:id="@+id/detalle_nombre"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/create"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+   		<TextView
+                android:id="@+id/detalle_historia"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="@string/create"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+   		<TextView
+                android:id="@+id/detalle_nacimiento"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/create"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+   		<TextView
+                android:id="@+id/detalle_edad"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/create"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+   		
+</LinearLayout>
